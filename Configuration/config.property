@@ -1,0 +1,10 @@
+baseURL=https://cias-ww-product-int.azurewebsites.net
+userid=p50038542@capitaindia.onmicrosoft.com
+password=Thank_you_sai543
+TestUser1=P20000000@capitaindia.onmicrosoft.com
+Passsword1=Capita@2024
+chromepath=./Drivers\\chromedriver.exe
+iepath=./Drivers\\IEDriverServer.exe
+
+firefoxpath=./Drivers\\geckodriver.exe
+outlookURL=https://outlook.office.com/

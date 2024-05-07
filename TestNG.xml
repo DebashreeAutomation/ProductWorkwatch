@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WWProduct_Automation" parallel="false" >
+
+	<listeners>
+		<listener class-name="WWproduct.utilities.Reporting" />
+	</listeners>
+  <test name="WWproduct Application Test1"  thread-count="5" preserve-order="true"  >
+		<parameter name="browser" value="chrome" />
+		
+		
+		<classes>
+		
+		    
+		    
+		     <class name="WWproduct.testCases.Verify_External_Query_Workflow" /> 
+		  
+			 
+		</classes>
+
+	</test>
+   
+	
+</suite>
