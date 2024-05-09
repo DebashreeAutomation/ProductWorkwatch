@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-WWProduct_Automation">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-WWProduct_Automation" title="WWproduct.testCases.Verify_External_Query_Workflow" class="method navigator-link" hash-for-method="verify_External_Query_Workflow">verify_External_Query_Workflow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-WWProduct_Automation" title="WWproduct.testCases.verifyLoginTo_WWproduct" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-WWProduct_Automation -->
@@ -122,25 +122,44 @@
           <div class="suite-WWProduct_Automation-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">WWproduct.testCases.Verify_External_Query_Workflow</span>
+              <span class="class-name">WWproduct.testCases.verifyLoginTo_WWproduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_External_Query_Workflow">
-                  </a> <!-- verify_External_Query_Workflow -->
-                  <span class="method-name">verify_External_Query_Workflow</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//*[@class=&apos;XG5Jd JtO0E&apos;])[1] (tried for 20 second(s) with 500 milliseconds interval)
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;LMPITSHSNH6Q3&apos;, ip: &apos;172.20.10.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+System info: host: &apos;LMPITSHSNH6Q3&apos;, ip: &apos;192.168.29.212&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\P50038~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62845}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62845/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c5bc6817d71c49ff5b07c12f3b1e6c1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at WWproduct.pageObjects.query_workflow.wwdevclick(query_workflow.java:212)
-	at WWproduct.testCases.Verify_External_Query_Workflow.verify_External_Query_Workflow(Verify_External_Query_Workflow.java:178)
+Command: [a4f443adfdb6cf1f6c371380f8baa941, findElement {using=xpath, value=//*[@id=&quot;tblMyQueries_filter&quot;]/label/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\P50038~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a4f443adfdb6cf1f6c371380f8baa941
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at WWproduct.testCases.verifyLoginTo_WWproduct.login(verifyLoginTo_WWproduct.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1950)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2085)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 43 more
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -163,7 +182,7 @@ Session ID: 5c5bc6817d71c49ff5b07c12f3b1e6c1
   &lt;test thread-count=&quot;5&quot; name=&quot;WWproduct Application Test1&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;WWproduct.testCases.Verify_External_Query_Workflow&quot;/&gt;
+      &lt;class name=&quot;WWproduct.testCases.verifyLoginTo_WWproduct&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- WWproduct Application Test1 --&gt;
 &lt;/suite&gt; &lt;!-- WWProduct_Automation --&gt;
@@ -205,9 +224,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_External_Query_Workflow')
-data.setCell(0, 2, 'WWproduct.testCases.Verify_External_Query_Workflow')
-data.setCell(0, 3, 182063);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'WWproduct.testCases.verifyLoginTo_WWproduct')
+data.setCell(0, 3, 197674);
 window.suiteTableData['WWProduct_Automation']= { tableData: data, tableDiv: 'times-div-WWProduct_Automation'}
 return data;
 }
@@ -238,7 +257,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">WWproduct.testCases.Verify_External_Query_Workflow</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">WWproduct.testCases.verifyLoginTo_WWproduct</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
@@ -246,12 +265,14 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verify_External_Query_Workflow</span>
-                <span class="method-start">14614 ms</span>
+                <span class="method-name">login</span>
+                <span class="method-start">8155 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">196784 ms</span>
+                <span class="method-start">205863 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

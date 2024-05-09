@@ -50,6 +50,7 @@ public class verifyLoginTo_WWproduct extends BaseClass {
 		login.clicknext();
 		login.setPassword(password);
 		login.clickSignin();
+		login.clickyes();
 		login.clickOkforAlreadyexistSession();
 		
 		if(driver.getTitle().equals("Workwatch"))
@@ -66,11 +67,8 @@ public class verifyLoginTo_WWproduct extends BaseClass {
 			
 		}
 		Thread.sleep(500);
-		JavascriptExecutor js=(JavascriptExecutor) driver;
-		WebElement element = driver.findElement(By.xpath("//*[@id=\"tblMyQueries_filter\"]/label/input"));
-		 
-	       js.executeScript("arguments[0].scrollIntoView();", element);
-		Thread.sleep(500);
+		
+		driver.quit();
 	}
 	
 }

@@ -204,7 +204,7 @@ public class Verify_External_Query_Workflow extends BaseClass {
 			  WebDriverWait wait20= new WebDriverWait(driverDP, Duration.ofSeconds(120));
 			  WebElement
 			  passwordforDP=wait20.until(ExpectedConditions.elementToBeClickable(By.xpath(
-			  "//input[@name='passwd']"))); passwordforDP.sendKeys("Thank_you_sai543");
+			  "//input[@name='passwd']"))); passwordforDP.sendKeys("Thank_you_sai542");
 			  
 			  WebDriverWait wait21 = new WebDriverWait(driverDP, Duration.ofSeconds(120));
 			  WebElement signinforDP= wait21.until(ExpectedConditions.elementToBeClickable(By.

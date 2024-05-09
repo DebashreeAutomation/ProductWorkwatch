@@ -14,7 +14,7 @@
 		
 		    
 		    
-		     <class name="WWproduct.testCases.Verify_External_Query_Workflow" /> 
+		     <class name="WWproduct.testCases.verifyLoginTo_WWproduct" /> 
 		  
 			 
 		</classes>
