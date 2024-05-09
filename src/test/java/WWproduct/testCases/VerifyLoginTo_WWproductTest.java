@@ -68,7 +68,7 @@ public class VerifyLoginTo_WWproductTest extends BaseClassTest {
 		}
 		Thread.sleep(500);
 		
-		driver.quit();
+		
 	}
 	
 }

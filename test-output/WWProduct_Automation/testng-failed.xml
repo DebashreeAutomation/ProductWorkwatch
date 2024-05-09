@@ -7,13 +7,14 @@
   <test thread-count="5" name="WWproduct Application Test1(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="WWproduct.testCases.verifyLoginTo_WWproduct">
+      <class name="WWproduct.testCases.VerifyLoginTo_WWproductTest">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
           <include name="login"/>
+          <include name="captureScreen"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- WWproduct.testCases.verifyLoginTo_WWproduct -->
+      </class> <!-- WWproduct.testCases.VerifyLoginTo_WWproductTest -->
     </classes>
   </test> <!-- WWproduct Application Test1(failed) -->
 </suite> <!-- Failed suite [WWProduct_Automation] -->
