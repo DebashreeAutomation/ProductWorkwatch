@@ -78,6 +78,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 			if(driver.getTitle().equals("Authentication Problem"))
 			{
 				login.clickOkforAlreadyexistSession();
+				Thread.sleep(1000);
 			}
 			
 		}

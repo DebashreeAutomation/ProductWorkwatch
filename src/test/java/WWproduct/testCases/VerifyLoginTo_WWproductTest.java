@@ -64,9 +64,10 @@ public class VerifyLoginTo_WWproductTest extends BaseClassTest {
 			{
 				login.clickOkforAlreadyexistSession();
 			}
-			
+			System.out.println("test passed");
+
 		}
-		Thread.sleep(500);
+		
 		
 		
 	}
