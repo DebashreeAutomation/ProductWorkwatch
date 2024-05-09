@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import WWproduct.pageObjects.Raise_New_query;
 import WWproduct.pageObjects.loginToWWproduct;
-import WWproduct.pageObjects.myRaisedqueries;
 import WWproduct.utilities.ReadConfig;
 
-public class verify_myRaised_queries extends BaseClassTest {
+public class Verify_user_creates_newQuery_ThroughQuerymanagementPageTest extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;
@@ -55,14 +55,20 @@ public class verify_myRaised_queries extends BaseClassTest {
 			{
 				login.clickOkforAlreadyexistSession();
 			}
-			
 		}
-		Thread.sleep(2000);
-		myRaisedqueries myraisedaisedqueries=new  myRaisedqueries(driver);
-		myraisedaisedqueries.query_management();
-		myraisedaisedqueries.MyRaisedQueries();
-		myraisedaisedqueries.clickonqueryid();
-		myraisedaisedqueries.clickcut();
+		Thread.sleep(1000);
+		Raise_New_query newQuery= new Raise_New_query(driver);
+		newQuery.query_management();
+		newQuery.NewQuery();
+		newQuery.SetAssigneeTeam();
+		newQuery.Setworktype();
+		newQuery.Enterquerysubject();
+		newQuery.Enterquerysummary();
+		newQuery.SetLocation();
+		newQuery.Setimpact();
+		newQuery.SetUrgency();
+		newQuery.SetQuerysource();
+		newQuery.ClickAdd();
 
 }
 }

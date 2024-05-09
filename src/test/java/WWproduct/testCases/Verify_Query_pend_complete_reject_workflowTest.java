@@ -28,7 +28,7 @@ import WWproduct.pageObjects.query_workflow;
 import WWproduct.utilities.ReadConfig;
 import freemarker.template.utility.Constants;
 
-public class verify_Query_pend_complete_reject_workflow extends BaseClassTest{
+public class Verify_Query_pend_complete_reject_workflowTest extends BaseClassTest{
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

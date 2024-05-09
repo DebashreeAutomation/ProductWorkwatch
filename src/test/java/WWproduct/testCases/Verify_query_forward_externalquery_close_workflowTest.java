@@ -22,7 +22,7 @@ import WWproduct.pageObjects.query_AllocationPage;
 import WWproduct.pageObjects.query_workflow;
 import WWproduct.utilities.ReadConfig;
 
-public class verify_query_forward_externalquery_close_workflow extends BaseClassTest {
+public class Verify_query_forward_externalquery_close_workflowTest extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

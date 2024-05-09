@@ -13,7 +13,7 @@ import WWproduct.pageObjects.PlanningDashboardPage;
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.utilities.ReadConfig;
 
-public class Verify_PlanningDashboard extends BaseClassTest {
+public class Verify_PlanningDashboardTest extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

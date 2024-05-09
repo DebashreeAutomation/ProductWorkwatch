@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import WWproduct.pageObjects.TestuserLoginpage;
 import WWproduct.utilities.ReadConfig;
 
-public class verify_outlookaction {
+public class Verify_outlookactionTest {
 	ReadConfig readconfig;
 	 public String outlookURL;
 	 

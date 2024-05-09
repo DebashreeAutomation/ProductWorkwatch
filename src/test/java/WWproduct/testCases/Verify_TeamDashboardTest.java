@@ -13,7 +13,7 @@ import WWproduct.pageObjects.TeamDashboardPage;
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.utilities.ReadConfig;
 
-public class Verify_TeamDashboard extends BaseClassTest{
+public class Verify_TeamDashboardTest extends BaseClassTest{
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;
