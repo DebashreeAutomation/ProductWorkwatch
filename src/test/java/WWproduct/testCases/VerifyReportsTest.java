@@ -13,7 +13,7 @@ import WWproduct.pageObjects.ReportsPage;
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.utilities.ReadConfig;
 
-public class VerifyReports extends BaseClass {
+public class VerifyReportsTest extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

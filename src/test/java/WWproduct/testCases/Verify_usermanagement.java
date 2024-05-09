@@ -11,7 +11,7 @@ import WWproduct.pageObjects.UserManagementPage;
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.utilities.ReadConfig;
 
-public class Verify_usermanagement extends BaseClass {
+public class Verify_usermanagement extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

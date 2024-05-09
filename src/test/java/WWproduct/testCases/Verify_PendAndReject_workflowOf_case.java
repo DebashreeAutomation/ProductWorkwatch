@@ -32,7 +32,7 @@ import WWproduct.pageObjects.wwWorkflow;
 import WWproduct.utilities.ReadConfig;
 import freemarker.template.utility.Constants;
 
-public class Verify_PendAndReject_workflowOf_case extends BaseClass  {
+public class Verify_PendAndReject_workflowOf_case extends BaseClassTest  {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

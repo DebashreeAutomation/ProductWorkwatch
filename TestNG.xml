@@ -14,7 +14,7 @@
 		
 		    
 		    
-		     <class name="WWproduct.testCases.verifyLoginTo_WWproduct" /> 
+		     <class name="WWproduct.testCases.VerifyLoginTo_WWproductTest" /> 
 		  
 			 
 		</classes>

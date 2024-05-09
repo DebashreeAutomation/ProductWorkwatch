@@ -15,7 +15,7 @@ import WWproduct.pageObjects.query_AllocationPage;
 import WWproduct.pageObjects.query_workflow;
 import WWproduct.utilities.ReadConfig;
 
-public class VerifyQueryDashboard_and_Reopeningofquery_QueryAllocationPage extends BaseClass {
+public class VerifyQueryDashboard_and_Reopeningofquery_QueryAllocationPageTest extends BaseClassTest {
 
 	ReadConfig readconfig;
 	 public String baseURL;

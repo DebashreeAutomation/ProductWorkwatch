@@ -10,7 +10,7 @@ import WWproduct.pageObjects.Raise_New_query;
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.utilities.ReadConfig;
 
-public class verify_user_creates_newQuery_ThroughQuerymanagementPage extends BaseClass {
+public class verify_user_creates_newQuery_ThroughQuerymanagementPage extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

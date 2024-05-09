@@ -22,7 +22,7 @@ import WWproduct.pageObjects.workflowForTestUser;
 import WWproduct.pageObjects.wwWorkflow;
 import WWproduct.utilities.ReadConfig;
 
-public class Verify_Processed_quality_authorization_Workflow extends BaseClass {
+public class Verify_Processed_quality_authorization_Workflow extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

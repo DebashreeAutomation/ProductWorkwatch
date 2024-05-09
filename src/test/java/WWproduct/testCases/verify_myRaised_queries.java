@@ -10,7 +10,7 @@ import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.pageObjects.myRaisedqueries;
 import WWproduct.utilities.ReadConfig;
 
-public class verify_myRaised_queries extends BaseClass {
+public class verify_myRaised_queries extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

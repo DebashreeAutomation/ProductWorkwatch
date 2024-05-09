@@ -21,7 +21,7 @@ import WWproduct.pageObjects.query_workflow;
 import WWproduct.pageObjects.wwWorkflow;
 import WWproduct.utilities.ReadConfig;
 
-public class Verify_External_Query_Workflow extends BaseClass {
+public class Verify_External_Query_Workflow extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;

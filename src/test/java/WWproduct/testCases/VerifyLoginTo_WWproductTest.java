@@ -17,7 +17,7 @@ import WWproduct.utilities.ReadConfig;
 
 
 
-public class verifyLoginTo_WWproduct extends BaseClass {
+public class VerifyLoginTo_WWproductTest extends BaseClassTest {
 	
 	ReadConfig readconfig;
 	 public String baseURL;

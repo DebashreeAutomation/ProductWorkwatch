@@ -22,7 +22,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import WWproduct.utilities.ReadConfig;
 
-public class BaseClass {
+public class BaseClassTest {
 	
 	ReadConfig readconfig;
 		

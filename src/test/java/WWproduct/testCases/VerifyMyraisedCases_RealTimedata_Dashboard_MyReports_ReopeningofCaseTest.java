@@ -20,7 +20,7 @@ import WWproduct.pageObjects.realtime_taskprocessingPage;
 import WWproduct.pageObjects.wwWorkflow;
 import WWproduct.utilities.ReadConfig;
 
-public class VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCase extends BaseClass {
+public class VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest extends BaseClassTest {
 
 	ReadConfig readconfig;
 	 public String baseURL;

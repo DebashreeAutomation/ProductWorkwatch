@@ -14,7 +14,7 @@ import WWproduct.pageObjects.query_workflow;
 import WWproduct.pageObjects.wwWorkflow;
 import WWproduct.utilities.ReadConfig;
 
-public class Verify_CaseAllocationPage_peripheralActivity_switchTeams extends BaseClass {
+public class Verify_CaseAllocationPage_peripheralActivity_switchTeams extends BaseClassTest {
 	ReadConfig readconfig;
 	 public String baseURL;
 	 public String username;
