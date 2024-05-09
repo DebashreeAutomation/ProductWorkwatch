@@ -1,28 +1,19 @@
 package WWproduct.testCases;
 
-import java.awt.Window;
-import java.io.File;
-import java.io.IOException;
-import java.time.Duration;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
-import org.apache.commons.io.FileUtils;
+import java.io.IOException;
+
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
 import WWproduct.pageObjects.caseCreationThroughInterface;
@@ -30,7 +21,7 @@ import WWproduct.pageObjects.caseManagementPage;
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.pageObjects.wwWorkflow;
 import WWproduct.utilities.ReadConfig;
-import freemarker.template.utility.Constants;
+
 
 public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	ReadConfig readconfig;
@@ -78,9 +69,9 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 			if(driver.getTitle().equals("Authentication Problem"))
 			{
 				login.clickOkforAlreadyexistSession();
-				Thread.sleep(1000);
+				
 			}
-			
+			Thread.sleep(3000);
 		}
 	
 		
@@ -92,8 +83,8 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	CaseCreation.Case_Creation();
 	Thread.sleep(3000);
 	CaseCreation.Case_Creation_byInterface();
+	Thread.sleep(3000);
 	
-	Thread.sleep(500);
 	CaseCreation.setWorkType();
 	Thread.sleep(1000);
 	CaseCreation.EnterCasecount();
@@ -130,7 +121,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	JavascriptExecutor js2=(JavascriptExecutor) driver;
 	WebElement element2 = driver.findElement(By.xpath("//*[@id=\"btnStartNonCoreActivity\"]"));
 	 
-       js.executeScript("arguments[0].scrollIntoView();", element2);
+       js2.executeScript("arguments[0].scrollIntoView();", element2);
        Thread.sleep(2000);
        
        //update case and see the case journey in task processing
@@ -139,10 +130,13 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	WorkflowAction.ClickCaseUpdate();
 	Thread.sleep(2000);
 	WorkflowAction.entercaseupdateText();
+	Thread.sleep(2000);
 	WorkflowAction.updateurgency();
+	Thread.sleep(2000);
 	WorkflowAction.Clickupdate();
 	//Copied the caseid from task processing
-	String  caseIdTS= driver.findElement(By.xpath("//*[@id=\"btnAddAction\"]")).getText();
+	Thread.sleep(2000);
+	String  caseIdTS= driver.findElement(By.xpath("//*[@class='lnk']")).getText();
 	Thread.sleep(2000);
 	WorkflowAction.Clickview_stsart();
 	Thread.sleep(2000);
@@ -173,13 +167,16 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
     CM.caseManagement();
     Thread.sleep(2000);
     CM.Casejourney();
+    Thread.sleep(2000);
     //Removed the default date from case journey and entered the caseid and searched the case
-    WebElement date= driver.findElement (By.xpath("/html/body/div[1]/div[3]/div[1]/div/div[2]/div/section/div[16]/div/div/div/div/div/div[2]/div/div/div[1]/div[1]/div/div/div/input"));
+    WebElement date= driver.findElement (By.xpath("//*[@class='form-control line-height']"));
     for (int i=0;i<=30;i++)
     	date.sendKeys(Keys.BACK_SPACE);
      Thread.sleep(2000);
-    WebElement caseidInputbox= driver.findElement (By.xpath("/html/body/div[1]/div[3]/div[1]/div/div[2]/div/section/div[16]/div/div/div/div/div/div[2]/div/div/div[1]/div[3]/div/div/input"));
+    WebElement caseidInputbox= driver.findElement (By.xpath("(//*[@class='form-control'])[3]"));
+    Thread.sleep(2000);
     caseidInputbox.sendKeys(caseIdTS );
+    Thread.sleep(2000);
     CM.SearchCasejourney();
     Thread.sleep(2000);
     CM.firstcaseclick();
@@ -195,7 +192,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
     Thread.sleep(5000);
     CM.Rejectedbucket();
     Thread.sleep(2000);
-    WebElement searchboxInCaseAllocationPage=driver.findElement(By.xpath("//*[@id=\"FilteredCaseInfoGrid_filter\"]/label/input"));	
+    WebElement searchboxInCaseAllocationPage=driver.findElement(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input"));	
     searchboxInCaseAllocationPage.sendKeys(caseIdTS + "\n");
     Thread.sleep(2000);
     driver.close();

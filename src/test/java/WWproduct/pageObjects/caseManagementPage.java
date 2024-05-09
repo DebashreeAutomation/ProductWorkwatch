@@ -18,7 +18,7 @@ public class caseManagementPage {
 	public void caseManagement()
 	{
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement casemanagement=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"sideLnk105\"]")));	
+		WebElement casemanagement=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='sideLnk105']")));	
 		casemanagement.click();
 	}
 	public void CaseAllocation()
@@ -95,8 +95,8 @@ public class caseManagementPage {
 	
 	public void Casejourney()
 	{
-		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement Casejourneyclick=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"sideLnk66\"]")));	
+		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(1030));
+		WebElement Casejourneyclick=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='sideLnk66']")));	
 		Casejourneyclick.click();
 	}
 	
@@ -109,7 +109,7 @@ public class caseManagementPage {
 	public void firstcaseclick()
 	{
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement firstcase=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"tblFilteredCaseDetail\"]/tbody/tr[1]/td[1]/a")));	
+		WebElement firstcase=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='tblFilteredCaseDetail']/tbody/tr[1]/td[1]/a")));	
 		firstcase.click();
 	}
 	public void clicksecondcase()

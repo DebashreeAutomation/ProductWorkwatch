@@ -3,7 +3,7 @@ package WWproduct.testCases;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
+
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -15,10 +15,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Parameters;
 import WWproduct.utilities.ReadConfig;
 
@@ -68,7 +68,7 @@ public class BaseClassTest {
 				driver = new InternetExplorerDriver();
 			}
 			
-			driver.manage().timeouts().implicitlyWait(500,TimeUnit.SECONDS);
+			
 			driver.manage().window().maximize();
 			
 			

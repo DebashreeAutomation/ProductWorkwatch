@@ -54,7 +54,7 @@ public class caseCreationThroughInterface {
 	}
 	public void setWorkType()
 	{
-		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(300));
+		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(3000));
 		WebElement worktype= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='SelectWorkType']")));
 		Select WT=new Select(worktype);
 		WT.selectByVisibleText("Worktype A");
