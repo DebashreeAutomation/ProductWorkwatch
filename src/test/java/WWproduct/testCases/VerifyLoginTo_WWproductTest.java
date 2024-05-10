@@ -3,16 +3,12 @@ package WWproduct.testCases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import WWproduct.pageObjects.TestuserLoginpage;
 import WWproduct.pageObjects.loginToWWproduct;
-import WWproduct.pageObjects.query_workflow;
+
 import WWproduct.utilities.ReadConfig;
 
 
@@ -51,8 +47,9 @@ public class VerifyLoginTo_WWproductTest extends BaseClassTest {
 		login.setPassword(password);
 		login.clickSignin();
 		login.clickyes();
-		login.clickOkforAlreadyexistSession();
 		
+		
+		login.clickOkforAlreadyexistSession();
 		if(driver.getTitle().equals("Workwatch"))
 		{
 			Assert.assertTrue(true);
@@ -63,9 +60,9 @@ public class VerifyLoginTo_WWproductTest extends BaseClassTest {
 			if(driver.getTitle().equals("Authentication Problem"))
 			{
 				login.clickOkforAlreadyexistSession();
+				
 			}
-			System.out.println("test passed");
-
+			Thread.sleep(3000);
 		}
 		
 		
