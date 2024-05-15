@@ -14,7 +14,7 @@ variables:
 
 steps:
 - task: Maven@3
-  displayName: 'Maven pom.xml'
+  displayName: 'pom.xml'
   inputs:
     mavenPomFile: '$(Parameters.mavenPOMFile)'
 
