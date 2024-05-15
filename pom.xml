@@ -140,8 +140,13 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api -->
-
-<dependency>
+  <dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-report-plugin</artifactId>
+  <version>3.2.5</version>
+  <type>maven-plugin</type>
+  </dependency>
+   <dependency>
 
     <groupId>jakarta.mail</groupId>
 
