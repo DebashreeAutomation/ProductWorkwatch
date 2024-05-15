@@ -9,15 +9,21 @@ trigger:
 pool:
   vmImage: Windows-2019
  
-variables:
-  mavenPOMFile: 'pom.xml'
+
 
 steps:
 - task: Maven@3
-  displayName: 'pom.xml'
   inputs:
-    mavenPomFile: '$(Parameters.mavenPOMFile)'
-
+    mavenPomFile: 'pom.xml'
+    goals: 'install'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
+    
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
   inputs:
