@@ -30,10 +30,18 @@ steps:
     SourceFolder: '$(system.defaultworkingdirectory)'
     Contents: '**/*.jar'
     TargetFolder: '$(build.artifactstagingdirectory)'
+<<<<<<< Updated upstream
 
+=======
+  
+>>>>>>> Stashed changes
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
+<<<<<<< Updated upstream
   
+=======
+ 
+>>>>>>> Stashed changes
