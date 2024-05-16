@@ -52,7 +52,7 @@ public class VerifyLoginTo_WWproductTest extends BaseClassTest {
 		login.clickOkforAlreadyexistSession();
 		if(driver.getTitle().equals("Workwatch"))
 		{
-			Assert.assertTrue(true);
+			//Assert.assertTrue(true);
 			
 		}
 		else
