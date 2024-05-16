@@ -29,7 +29,7 @@
 
    		<artifactId>selenium-java</artifactId>
 
-    	<version>4.6.0</version>
+    	<version>4.4.0</version>
 
 	</dependency> 
 
@@ -85,7 +85,7 @@
 
     <artifactId>testng</artifactId>
 
-    <version>7.4.0</version>
+    <version>7.8.0</version>
 
     <scope>compile</scope>
 
