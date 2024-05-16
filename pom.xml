@@ -85,7 +85,7 @@
 
     <artifactId>testng</artifactId>
 
-    <version>7.4.0</version>
+    <version>7.10.0</version>
 
     <scope>compile</scope>
 
