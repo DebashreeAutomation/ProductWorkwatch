@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import WWproduct.pageObjects.TestuserLoginpage;
 import WWproduct.pageObjects.caseCreationThroughInterface;
-import WWproduct.pageObjects.caseManagementPage;
+
 import WWproduct.pageObjects.loginToWWproduct;
 import WWproduct.pageObjects.query_workflow;
 import WWproduct.pageObjects.wwWorkflow;
@@ -73,7 +73,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 		}
 	
 		
-		caseManagementPage CM = new caseManagementPage(driver);
+		//caseManagementPage CM = new caseManagementPage(driver);
 		 caseCreationThroughInterface CaseCreation=new caseCreationThroughInterface(driver);
 		 wwWorkflow WorkflowAction= new wwWorkflow(driver);
 	Thread.sleep(3000);
@@ -220,7 +220,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			  WebElement okForDPlogin=wait23.until(ExpectedConditions.elementToBeClickable(By.id(
 			  "btnLoginConfirm"))); okForDPlogin.click();
 			  
-			  caseManagementPage CMDP = new caseManagementPage(driverDP);
+			 // caseManagementPage CMDP = new caseManagementPage(driverDP);
 				 wwWorkflow WorkflowActionDP= new wwWorkflow(driverDP);
 				 
 				 
