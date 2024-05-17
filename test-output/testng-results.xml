@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-17T20:35:21 IST" name="WWProduct_Automation" finished-at="2024-05-17T20:37:38 IST" duration-ms="136590">
+  <suite started-at="2024-05-17T20:41:52 IST" name="WWProduct_Automation" finished-at="2024-05-17T20:44:11 IST" duration-ms="138861">
     <groups>
     </groups>
-    <test started-at="2024-05-17T20:35:21 IST" name="WWproduct Application Test1" finished-at="2024-05-17T20:37:38 IST" duration-ms="136590">
+    <test started-at="2024-05-17T20:41:52 IST" name="WWproduct Application Test1" finished-at="2024-05-17T20:44:11 IST" duration-ms="138861">
       <class name="WWproduct.testCases.VerifyLoginTo_WWproductTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:WWproduct.testCases.VerifyLoginTo_WWproductTest@54a7079e]" started-at="2024-05-17T20:35:22 IST" name="setup" finished-at="2024-05-17T20:35:23 IST" duration-ms="1290" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:WWproduct.testCases.VerifyLoginTo_WWproductTest@54a7079e]" started-at="2024-05-17T20:41:52 IST" name="setup" finished-at="2024-05-17T20:41:54 IST" duration-ms="1486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:WWproduct.testCases.VerifyLoginTo_WWproductTest@54a7079e]" started-at="2024-05-17T20:35:23 IST" name="login" finished-at="2024-05-17T20:37:38 IST" duration-ms="134867" status="FAIL">
+        <test-method signature="login()[pri:1, instance:WWproduct.testCases.VerifyLoginTo_WWproductTest@54a7079e]" started-at="2024-05-17T20:41:54 IST" name="login" finished-at="2024-05-17T20:44:11 IST" duration-ms="136879" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: btnLoginConfirm (tried for 120 second(s) with 500 milliseconds interval)]]>
@@ -63,10 +63,10 @@ from unknown error: web view not found
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.21'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e0937687611fe0f6aff5605d2fce54ec, findElement {using=id, value=btnLoginConfirm}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\P50038~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55696}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55696/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e0937687611fe0f6aff5605d2fce54ec
-at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+Command: [2782454c6aa4eb154ac76817ecc21879, findElement {using=id, value=btnLoginConfirm}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\P50038~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55985}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55985/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2782454c6aa4eb154ac76817ecc21879
+at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -92,7 +92,7 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:WWproduct.testCases.VerifyLoginTo_WWproductTest@54a7079e]" started-at="2024-05-17T20:37:38 IST" name="tearDown" finished-at="2024-05-17T20:37:38 IST" duration-ms="111" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:WWproduct.testCases.VerifyLoginTo_WWproductTest@54a7079e]" started-at="2024-05-17T20:44:11 IST" name="tearDown" finished-at="2024-05-17T20:44:11 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
