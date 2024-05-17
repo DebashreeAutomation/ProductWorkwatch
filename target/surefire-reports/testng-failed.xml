@@ -3,95 +3,6 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest -->
-      <class name="WWproduct.testCases.Verify_query_forward_externalquery_close_workflowTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_query_forward_externalquery_close_workflowTest -->
-      <class name="WWproduct.testCases.Verify_External_Query_WorkflowTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verify_External_Query_Workflow"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_External_Query_WorkflowTest -->
-      <class name="WWproduct.testCases.BaseClassTest">
-        <methods>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.BaseClassTest -->
-      <class name="WWproduct.testCases.Verify_user_creates_newQuery_ThroughQuerymanagementPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="login"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_user_creates_newQuery_ThroughQuerymanagementPageTest -->
-      <class name="WWproduct.testCases.Verify_CaseAllocationPage_peripheralActivity_switchTeamsTest">
-        <methods>
-          <include name="login"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_CaseAllocationPage_peripheralActivity_switchTeamsTest -->
-      <class name="WWproduct.testCases.Verify_PlanningDashboardTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="login"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_PlanningDashboardTest -->
-      <class name="WWproduct.testCases.VerifyReportsTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.VerifyReportsTest -->
-      <class name="WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest -->
-      <class name="WWproduct.testCases.VerifyLoginTo_WWproductTest">
-        <methods>
-          <include name="login"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.VerifyLoginTo_WWproductTest -->
-      <class name="WWproduct.testCases.VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest -->
-      <class name="WWproduct.testCases.Verify_Query_pend_complete_reject_workflowTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="login"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_Query_pend_complete_reject_workflowTest -->
-      <class name="WWproduct.testCases.Verify_usermanagementTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="login"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_usermanagementTest -->
       <class name="WWproduct.testCases.Verify_myRaised_queriesTest">
         <methods>
           <include name="login"/>
@@ -99,6 +10,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- WWproduct.testCases.Verify_myRaised_queriesTest -->
+      <class name="WWproduct.testCases.VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest -->
       <class name="WWproduct.testCases.Verify_TeamDashboardTest">
         <methods>
           <include name="login"/>
@@ -106,6 +24,67 @@
           <include name="setup"/>
         </methods>
       </class> <!-- WWproduct.testCases.Verify_TeamDashboardTest -->
+      <class name="WWproduct.testCases.Verify_CaseAllocationPage_peripheralActivity_switchTeamsTest">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_CaseAllocationPage_peripheralActivity_switchTeamsTest -->
+      <class name="WWproduct.testCases.Verify_user_creates_newQuery_ThroughQuerymanagementPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_user_creates_newQuery_ThroughQuerymanagementPageTest -->
+      <class name="WWproduct.testCases.VerifyLoginTo_WWproductTest">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.VerifyLoginTo_WWproductTest -->
+      <class name="WWproduct.testCases.Verify_Query_pend_complete_reject_workflowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_Query_pend_complete_reject_workflowTest -->
+      <class name="WWproduct.testCases.BaseClassTest">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.BaseClassTest -->
+      <class name="WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest -->
+      <class name="WWproduct.testCases.Verify_usermanagementTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_usermanagementTest -->
+      <class name="WWproduct.testCases.VerifyReportsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.VerifyReportsTest -->
+      <class name="WWproduct.testCases.Verify_PlanningDashboardTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_PlanningDashboardTest -->
       <class name="WWproduct.testCases.VerifyQueryDashboard_and_Reopeningofquery_QueryAllocationPageTest">
         <methods>
           <include name="tearDown"/>
@@ -113,6 +92,27 @@
           <include name="setup"/>
         </methods>
       </class> <!-- WWproduct.testCases.VerifyQueryDashboard_and_Reopeningofquery_QueryAllocationPageTest -->
+      <class name="WWproduct.testCases.Verify_query_forward_externalquery_close_workflowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_query_forward_externalquery_close_workflowTest -->
+      <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest -->
+      <class name="WWproduct.testCases.Verify_External_Query_WorkflowTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verify_External_Query_Workflow"/>
+        </methods>
+      </class> <!-- WWproduct.testCases.Verify_External_Query_WorkflowTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
