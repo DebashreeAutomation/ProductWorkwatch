@@ -11,12 +11,7 @@
 		
 			
 		<classes>
-		
-		    
-		    
-		     <class name="WWproduct.testCases.VerifyLoginTo_WWproductTest" /> 
-		  
-			 
+		<class name="WWproduct.testCases.VerifyLoginTo_WWproductTest" /> 
 		</classes>
 
 	</test>
