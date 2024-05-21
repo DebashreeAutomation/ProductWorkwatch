@@ -14,14 +14,15 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 
 //import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 //import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Reporting extends TestListenerAdapter{
-	public ExtentSparkReporter sparkReporter;
+	public ExtentHtmlReporter HtmlReporter;
 	public ExtentReports extent;
 	public ExtentTest logger;
 
@@ -29,29 +30,24 @@ public class Reporting extends TestListenerAdapter{
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		String repName="Test-Report-"+timeStamp+".html";
-		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/"+repName);
-		try {
-			sparkReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		HtmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName);
+		HtmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 
-		sparkReporter.config().setDocumentTitle("WWProductAutomation"); 
-		sparkReporter.config().setReportName("Functional Test Automation Report"); 
+		HtmlReporter.config().setDocumentTitle("WWProductAutomation"); 
+		HtmlReporter.config().setReportName("Functional Test Automation Report"); 
 		//sparkReporter.config().setTestViewChartLocation(ChartLocation.TOP); 
-		sparkReporter.config().setTheme(Theme.DARK);
+		HtmlReporter.config().setTheme(Theme.DARK);
         extent=new ExtentReports();
-		extent.attachReporter(sparkReporter);
+		extent.attachReporter(HtmlReporter);
 		extent.setSystemInfo("Project name","WWProductAutomation");
 		extent.setSystemInfo("Host name","localhost");
 		extent.setSystemInfo("Environemnt","QA");
 		extent.setSystemInfo("Tester","debashree");
 		
-		sparkReporter.config().setDocumentTitle("WWProductAutomation"); 
-		sparkReporter.config().setReportName("Functional Test Automation Report"); 
+		HtmlReporter.config().setDocumentTitle("WWProductAutomation"); 
+		HtmlReporter.config().setReportName("Functional Test Automation Report"); 
 		//sparkReporter.config().setTestViewChartLocation(ChartLocation.TOP); 
-		sparkReporter.config().setTheme(Theme.DARK);
+		HtmlReporter.config().setTheme(Theme.DARK);
 	}
 	
 	public void onTestSuccess(ITestResult tr)
@@ -71,7 +67,12 @@ public class Reporting extends TestListenerAdapter{
 	
 	if(f.exists())
 	{
-	logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotsPath));
+	try {
+		logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotsPath));
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 		
 	}

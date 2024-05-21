@@ -1,92 +1,92 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 31, Failures: 15, Errors: 0, Skipped: 16, Time elapsed: 0.933 s <<< FAILURE! - in TestSuite
-setup(WWproduct.testCases.VerifyLoginTo_WWproductTest)  Time elapsed: 0.589 s  <<< FAILURE!
+Tests run: 31, Failures: 15, Errors: 0, Skipped: 16, Time elapsed: 1.081 s <<< FAILURE! - in TestSuite
+setup(WWproduct.testCases.VerifyLoginTo_WWproductTest)  Time elapsed: 0.762 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest)  Time elapsed: 0.003 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.VerifyQueryDashboard_and_Reopeningofquery_QueryAllocationPageTest)  Time elapsed: 0 s  <<< FAILURE!
+setup(WWproduct.testCases.VerifyMyraisedCases_RealTimedata_Dashboard_MyReports_ReopeningofCaseTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.VerifyReportsTest)  Time elapsed: 0 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_PlanningDashboardTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_CaseAllocationPage_peripheralActivity_switchTeamsTest)  Time elapsed: 0 s  <<< FAILURE!
+setup(WWproduct.testCases.VerifyQueryDashboard_and_Reopeningofquery_QueryAllocationPageTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_External_Query_WorkflowTest)  Time elapsed: 0 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_myRaised_queriesTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.VerifyReportsTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_query_forward_externalquery_close_workflowTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_PlanningDashboardTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_CaseAllocationPage_peripheralActivity_switchTeamsTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_Query_pend_complete_reject_workflowTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_query_forward_externalquery_close_workflowTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_External_Query_WorkflowTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_Query_pend_complete_reject_workflowTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_TeamDashboardTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_TeamDashboardTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_myRaised_queriesTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_usermanagementTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_usermanagementTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
 
 
-setup(WWproduct.testCases.Verify_user_creates_newQuery_ThroughQuerymanagementPageTest)  Time elapsed: 0.001 s  <<< FAILURE!
+setup(WWproduct.testCases.Verify_user_creates_newQuery_ThroughQuerymanagementPageTest)  Time elapsed: 0.775 s  <<< FAILURE!
 org.testng.TestNGException: 
 
 Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
