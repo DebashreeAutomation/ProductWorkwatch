@@ -30,12 +30,7 @@ public class Reporting extends TestListenerAdapter{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		String repName="Test-Report-"+timeStamp+".html";
 		sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/"+repName);
-		try {
-			sparkReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		sparkReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 
 		sparkReporter.config().setDocumentTitle("WWProductAutomation"); 
 		sparkReporter.config().setReportName("Functional Test Automation Report"); 
@@ -71,7 +66,12 @@ public class Reporting extends TestListenerAdapter{
 	
 	if(f.exists())
 	{
-	logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotsPath));
+	try {
+		logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotsPath));
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 		
 	}
