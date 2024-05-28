@@ -3,9 +3,6 @@ package WWproduct.testCases;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
-
-
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.OutputType;

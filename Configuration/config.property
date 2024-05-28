@@ -4,6 +4,7 @@ password=Thank_you_sai542
 TestUser1=P20000000@capitaindia.onmicrosoft.com
 Passsword1=Capita#2024
 chromepath=./Drivers\\chromedriver.exe
+
 iepath=./Drivers\\IEDriverServer.exe
 
 firefoxpath=./Drivers\\geckodriver.exe
