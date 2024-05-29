@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-WWProduct_Automation">
-              <span class="suite-name border-failed">WWProduct_Automation</span>
+              <span class="suite-name border-passed">WWProduct_Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-WWProduct_Automation" class="hide-methods failed suite-WWProduct_Automation"> (hide)</a> <!-- hide-methods failed suite-WWProduct_Automation -->
-                      <a href="#" panel-name="suite-WWProduct_Automation" class="show-methods failed suite-WWProduct_Automation"> (show)</a> <!-- show-methods failed suite-WWProduct_Automation -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-WWProduct_Automation" class="hide-methods passed suite-WWProduct_Automation"> (hide)</a> <!-- hide-methods passed suite-WWProduct_Automation -->
+                      <a href="#" panel-name="suite-WWProduct_Automation" class="show-methods passed suite-WWProduct_Automation"> (show)</a> <!-- show-methods passed suite-WWProduct_Automation -->
                     </span>
-                    <div class="method-list-content failed suite-WWProduct_Automation">
+                    <div class="method-list-content passed suite-WWProduct_Automation">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-WWProduct_Automation" title="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-WWProduct_Automation -->
+                    </div> <!-- method-list-content passed suite-WWProduct_Automation -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-WWProduct_Automation" class="panel WWProduct_Automation">
-          <div class="suite-WWProduct_Automation-class-failed">
+          <div class="suite-WWProduct_Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,33 +130,10 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=122.0.6261.95)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_401&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2a7703f66b4996a4a34db255d4bbca7c, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\P50038~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55407}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55407/devtoo..., se:cdpVersion: 122.0.6261.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2a7703f66b4996a4a34db255d4bbca7c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest.login(Verify_PendAndReject_workflowOf_caseTest.java:42)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WWProduct_Automation-class-failed -->
+          </div> <!-- suite-WWProduct_Automation-class-passed -->
         </div> <!-- panel WWProduct_Automation -->
         <div panel-name="test-xml-WWProduct_Automation" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -217,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest')
-data.setCell(0, 3, 1715);
+data.setCell(0, 3, 122729);
 window.suiteTableData['WWProduct_Automation']= { tableData: data, tableDiv: 'times-div-WWProduct_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-WWProduct_Automation">
               </div> <!-- times-div-WWProduct_Automation -->
             </div> <!-- times-div -->
@@ -254,14 +231,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">2790 ms</span>
+                <span class="method-start">3529 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4542 ms</span>
+                <span class="method-start">126284 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
