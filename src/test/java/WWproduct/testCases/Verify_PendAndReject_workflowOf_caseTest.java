@@ -69,7 +69,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 			if(driver.getTitle().equals("Authentication Problem"))
 			{
 				login.clickOkforAlreadyexistSession();
-				
+				System.out.println("Advisor Logged in successfully to WW product application");
 			}
 			Thread.sleep(3000);
 		}
@@ -95,7 +95,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	Thread.sleep(1000);
 	
 	CaseCreation.ClickSubmit();
-	
+	System.out.println("Case created successfully by advisor");
 	//Pend the case
 	Thread.sleep(2000);
 	WorkflowAction.Taskprocessing();
@@ -114,7 +114,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
        js.executeScript("arguments[0].scrollIntoView();", element);
        Thread.sleep(2000);
        WorkflowAction.ClickSubmit();
-	
+       System.out.println("Advisor put the case in pend state");
 	
 	Thread.sleep(2000);
 	
@@ -134,6 +134,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	WorkflowAction.updateurgency();
 	Thread.sleep(2000);
 	WorkflowAction.Clickupdate();
+	System.out.println("Advisor updated the case");
 	//Copied the caseid from task processing
 	Thread.sleep(2000);
 	String  caseIdTS= driver.findElement(By.xpath("//*[@class='lnk']")).getText();
@@ -144,6 +145,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	Thread.sleep(2000);
 	WorkflowAction.ClickCasejorney();
 	Thread.sleep(2000);
+	System.out.println("Advisor checked case journey");
 	//JavascriptExecutor js1=(JavascriptExecutor) driver;
 	//WebElement element1 = driver.findElement(By.xpath("//*[contains(text(),'\" + Case Updated + \"')]"));
 	 
@@ -160,7 +162,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
    	WorkflowAction.rejectcommentsforcase();
    	WorkflowAction.ClickSubmit();
     Thread.sleep(2000);
-       
+    System.out.println("Case is rejected by advisor"); 
     
     
     //Check the case journey of the case through case journey
@@ -186,6 +188,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
     Thread.sleep(2000);
     //download detail  case journey of that case
     CM.downloadcasejourney2();
+    System.out.println("Advisor searched the rejected case in My raised case and downloaded the case journey excel");
     Thread.sleep(2000);
     //Check the case in Rejected bucket in case allocation page
     CM.CaseAllocation();
@@ -194,6 +197,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
     Thread.sleep(2000);
     WebElement searchboxInCaseAllocationPage=driver.findElement(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input"));	
     searchboxInCaseAllocationPage.sendKeys(caseIdTS + "\n");
+    System.out.println("The case is moved to rejected bucket in case allocation page");
     Thread.sleep(2000);
     driver.close();
 }
