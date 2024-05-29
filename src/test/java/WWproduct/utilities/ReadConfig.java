@@ -20,6 +20,10 @@ Properties pro;
 			System.out.println("Exception is " + e.getMessage());
 		}
 	}
+	public String getbrowser() {
+		String Browser=pro.getProperty("Browser");
+		return Browser;
+	}
 	public String getApplicationURL()
 	{
 		String url=pro.getProperty("baseURL");

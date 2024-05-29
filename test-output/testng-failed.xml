@@ -5,7 +5,7 @@
     <listener class-name="WWproduct.utilities.Reporting"/>
   </listeners>
   <test thread-count="5" name="WWproduct Application Test1(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="Browser" value="chrome"/>
     <classes>
       <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
         <methods>

@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.Parameters;
@@ -27,9 +27,9 @@ public class BaseClassTest {
 	 String Downloadfile=System.getProperty("user.dir")+ "\\DownloadExcel\\";
 	 ChromeOptions chromeOptions = new ChromeOptions();
 	 
-		@Parameters("browser")
+		@Parameters("Browser")
 		@BeforeClass
-		public void setup(String br)
+		public void setup(String Browser)
 		{	
 		    File path = new File(Downloadfile);
 		    File[] files = path.listFiles();
@@ -42,24 +42,24 @@ public class BaseClassTest {
 			chromeprefs.put("profile.default_content_settings.popups",0);
 			chromeprefs.put("download.default_directory",Downloadfile);
 			chromeOptions.setExperimentalOption("prefs",chromeprefs);
+			String browserName=readconfig.getbrowser(); //!=null ? System.getProperty("browser"):System.getProperty("browser");
 			
-			
-			if(br.equals("chrome"))
+			if(browserName.contains("Chrome"))
 			{
 			
-				System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
+				//System.setProperty("webdriver.chrome.driver",readconfig.getbrowser());
 				 //ChromeOptions chromeOptions = new ChromeOptions();
 				 chromeOptions.addArguments("--remote-allow-origins=*");
 				  driver = new ChromeDriver(chromeOptions);
 				  
 				  
 			}
-			else if(br.equals("firefox"))
+			else if(Browser.equals("firefox"))
 			{
 				System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxPath());
 				driver = new FirefoxDriver();
 			}
-			else if(br.equals("ie"))
+			else if(Browser.equals("ie"))
 			{
 				System.setProperty("webdriver.ie.driver",readconfig.getIEPath());
 				driver = new InternetExplorerDriver();

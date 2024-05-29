@@ -7,7 +7,7 @@
 		<listener class-name="WWproduct.utilities.Reporting" />
 	</listeners>
   <test name="WWproduct Application Test1"  thread-count="5" preserve-order="true"  >
-		<parameter name="browser" value="chrome" />
+		<parameter name="Browser" value="chrome" />
 		
 			
 		<classes>
