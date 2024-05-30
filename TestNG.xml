@@ -11,7 +11,7 @@
 		
 			
 		<classes>
-		<class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest" /> 
+		<class name="WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest" /> 
 		</classes>
         
 	</test>

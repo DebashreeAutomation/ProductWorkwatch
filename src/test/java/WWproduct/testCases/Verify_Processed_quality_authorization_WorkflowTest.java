@@ -74,6 +74,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			if(driver.getTitle().equals("Authentication Problem"))
 			{
 				login.clickOkforAlreadyexistSession();
+				System.out.println("Advisor logged in successfully to WW product Application");
 			}
 			
 		}
@@ -86,17 +87,23 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	CaseCreation.Case_Creation();
 	Thread.sleep(3000);
 	CaseCreation.Case_Creation_byInterface();
-	Thread.sleep(500);
+	Thread.sleep(3000);
 	CaseCreation.setWorkType();
+	Thread.sleep(3000);
 	CaseCreation.EnterCasecount();
+	Thread.sleep(3000);
 	CaseCreation.SetUrgency();
+	Thread.sleep(3000);
 	CaseCreation.SetAssignedTo();
+	Thread.sleep(3000);
 	CaseCreation.ClickSubmit();
-	Thread.sleep(2000);
+	Thread.sleep(3000);
+	System.out.println("Advisor created case successfully");
+	Thread.sleep(3000);
 	
 	//Processd the case
 	WorkflowAction.Taskprocessing();
-	Thread.sleep(2000);
+	Thread.sleep(3000);
 	String  caseIdTS= driver.findElement(By.xpath("//*[@id='btnAddAction']")).getText();
 	Thread.sleep(2000);
 	WorkflowAction.clickstarticon();
@@ -109,7 +116,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	WorkflowAction.ClickSubmit();
 	Thread.sleep(2000);
-	
+	System.out.println("Case is processed by advisor,case status changed to 'Sent for QC'");
 	//Assign the case to quality team user
 	CM.caseManagement();
 	Thread.sleep(2000);
@@ -127,6 +134,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
     CM.debashreeEmployeeSelect();
     Thread.sleep(2000);
     CM.AllocatebtnClick();
+    System.out.println("Case cannot be allocated to the user in quality team who has processed the case");
     Thread.sleep(2000);
 	captureScreen(driver,"User cannot be assigned the case in quality team who has worked on the case previously");
 	Thread.sleep(2500);
@@ -141,6 +149,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	CM.AllocatebtnClick();
 	Thread.sleep(2000);
+	System.out.println("Case is allocated to Quality manager in quality team");
     driver.close();
 	
 	
@@ -189,7 +198,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	  WebDriverWait wait6= new WebDriverWait(driver, Duration.ofSeconds(120));
 	  WebElement
 	  password=wait6.until(ExpectedConditions.elementToBeClickable(By.xpath(
-	  "//input[@name='passwd']"))); password.sendKeys("Capita@2024");
+	  "//input[@name='passwd']"))); password.sendKeys("Capita#2024");
 	  
 	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	  WebElement signin= wait.until(ExpectedConditions.elementToBeClickable(By.
@@ -204,7 +213,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	  WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(120));
 	  WebElement ok=wait2.until(ExpectedConditions.elementToBeClickable(By.id(
 	  "btnLoginConfirm"))); ok.click();
-	  
+	  System.out.println("Quality manager logged in to WW product application");
 	  caseManagementpagefortestusers CM1 = new caseManagementpagefortestusers(driver);
 		//caseCreationThroughInterface CaseCreation1=new caseCreationThroughInterface(driver);
 		workflowForTestUser WorkflowAction1= new workflowForTestUser(driver);
@@ -229,6 +238,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	WorkflowAction1.ClickSubmit();
 	Thread.sleep(2000);
 	WorkflowAction1.selectpend();
+	
 	Thread.sleep(2000);
 	WorkflowAction1.selectActionReasn();
 	Thread.sleep(2000);
@@ -240,7 +250,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
        js.executeScript("arguments[0].scrollIntoView();", element);
        Thread.sleep(2000);
        WorkflowAction1.ClickSubmit();
-	
+       System.out.println("Quality manager searched the case in his task processing screen and put the case in pend state");
 	
 	Thread.sleep(2000);
 	
@@ -277,12 +287,13 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	WorkflowAction1.ClickSubmit();
 	Thread.sleep(2000);
-	
+	System.out.println("Quality manager put the case in Rework state");
 	CM1.caseManagement();
 	Thread.sleep(2000);
 	CM1.CaseAllocation();
 	Thread.sleep(2000);
 	CM1.reworkbucket();
+	
 	Thread.sleep(2000);
 	WebDriverWait wait9=new WebDriverWait(driver, Duration.ofSeconds(1000));
 	WebElement searchboxInCaseAllocationPageofTejasLocal=wait9.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input")));
@@ -304,6 +315,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	CM1.AllocatebtnClick();
 	Thread.sleep(2000);
+	System.out.println("The case is moved to Rework bucket, case status is Rework and it is again assigned to advisor");
 	driver.close();
 	
 	
@@ -325,7 +337,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	  WebDriverWait wait20= new WebDriverWait(driverDP, Duration.ofSeconds(120));
 	  WebElement
 	  passwordforDP=wait20.until(ExpectedConditions.elementToBeClickable(By.xpath(
-	  "//input[@name='passwd']"))); passwordforDP.sendKeys("Thank_you_sai543");
+	  "//input[@name='passwd']"))); passwordforDP.sendKeys("Thank_you_sai542");
 	  
 	  WebDriverWait wait21 = new WebDriverWait(driverDP, Duration.ofSeconds(120));
 	  WebElement signinforDP= wait21.until(ExpectedConditions.elementToBeClickable(By.
@@ -340,7 +352,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	  WebDriverWait wait23 = new WebDriverWait(driverDP, Duration.ofSeconds(120));
 	  WebElement okForDPlogin=wait23.until(ExpectedConditions.elementToBeClickable(By.id(
 	  "btnLoginConfirm"))); okForDPlogin.click();
-	  
+	  System.out.println("Advisor logged in successfully to WW Product application");
 	  caseManagementPage CMDP = new caseManagementPage(driverDP);
 		 wwWorkflow WorkflowActionDP= new wwWorkflow(driverDP);
 		 
@@ -359,7 +371,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	WorkflowActionDP.ClickSubmit();
 	Thread.sleep(2000);
-	
+	System.out.println("Advisor Processed the case and the case is again sent for quality");
 	//Assign the case to quality team user
 	CMDP.caseManagement();
 	Thread.sleep(2000);
@@ -379,6 +391,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	    Thread.sleep(2000);
 	    CMDP.AllocatebtnClick();
 	    Thread.sleep(2000);
+	    System.out.println("Case is allocated to quality manager");
 	    driverDP.close();
 	    
 	    
@@ -416,7 +429,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 		  WebDriverWait wait15 = new WebDriverWait(driver2, Duration.ofSeconds(120));
 		  WebElement ok1=wait15.until(ExpectedConditions.elementToBeClickable(By.id(
 		  "btnLoginConfirm"))); ok1.click();
-		  
+		  System.out.println("Quality manager logged in to WW product application");
 		  caseManagementpagefortestusers CM2 = new caseManagementpagefortestusers(driver2);
 			workflowForTestUser WorkflowAction2= new workflowForTestUser(driver2);
 		  
@@ -436,7 +449,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			Thread.sleep(2000);
 			WorkflowAction2.ClickSubmit();
 			Thread.sleep(2000);
-			
+			System.out.println("Quality manager completed Quality for the case");
 			CM2.caseManagement();
 			Thread.sleep(2000);
 			CM2.CaseAllocation();
@@ -454,6 +467,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			CM2.TestUserEmployeeSelect();
 			Thread.sleep(2000);
 			CM2.AllocatebtnClick();
+			System.out.println("Case is available under outstanding tile in case allocation page with status 'Sent for Authorization'");
 			Thread.sleep(2000);
 			WorkflowAction2.Taskprocessing();
 			Thread.sleep(3000);
@@ -477,7 +491,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 		       js3.executeScript("arguments[0].scrollIntoView();", element3);
 		       Thread.sleep(2000);
 		       WorkflowAction2.ClickSubmit();
-			
+		       System.out.println("Authorizer put the case in pend state");
 			
 			Thread.sleep(3000);
 			
@@ -500,6 +514,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			WorkflowAction2.AuthorizationCompletedcommentsforcase();
 			Thread.sleep(2000);
 			WorkflowAction2.ClickSubmit();
+			System.out.println("Authorizer completed the case");
 			Thread.sleep(2000);
 			CM2.caseManagement();
 			Thread.sleep(2000);
@@ -510,7 +525,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			WebElement searchboxInCaseAllocationpageofTESTUSER1=wait26.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input")));
 			searchboxInCaseAllocationpageofTESTUSER1.sendKeys(caseIdTS1 + "\n");
 			Thread.sleep(3000);
-		    
+			System.out.println("Case is closed and is moved to completed bucket in case allocation page");
 		    CM2.Casejourney();
 		    Thread.sleep(3000);
 		    //Removed the default date from case journey and entered the caseid and searched the case
@@ -531,7 +546,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 		    //download detail  case journey of that case
 		    CM2.downloadcasejourney2();
 		    Thread.sleep(2000);
-			
+		    System.out.println("Case journey for that case is downloaded");
 			driver2.close();
 	}
 }
