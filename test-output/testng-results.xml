@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="WWProduct_Automation" duration-ms="396480" started-at="2024-05-29T18:47:52 IST" finished-at="2024-05-29T18:54:29 IST">
+  <suite name="WWProduct_Automation" duration-ms="177066" started-at="2024-05-30T19:55:25 IST" finished-at="2024-05-30T19:58:22 IST">
     <groups>
     </groups>
-    <test name="WWproduct Application Test1" duration-ms="396480" started-at="2024-05-29T18:47:52 IST" finished-at="2024-05-29T18:54:29 IST">
-      <class name="WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest@7dc222ae]" name="setup" is-config="true" duration-ms="3334" started-at="2024-05-29T18:47:53 IST" finished-at="2024-05-29T18:47:56 IST">
+    <test name="WWproduct Application Test1" duration-ms="177066" started-at="2024-05-30T19:55:25 IST" finished-at="2024-05-30T19:58:22 IST">
+      <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@7dc222ae]" name="setup" is-config="true" duration-ms="7906" started-at="2024-05-30T19:55:26 IST" finished-at="2024-05-30T19:55:34 IST">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest@7dc222ae]" name="login" duration-ms="392410" started-at="2024-05-29T18:47:56 IST" finished-at="2024-05-29T18:54:28 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@7dc222ae]" name="login" duration-ms="167106" started-at="2024-05-30T19:55:34 IST" finished-at="2024-05-30T19:58:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest@7dc222ae]" name="tearDown" is-config="true" duration-ms="536" started-at="2024-05-29T18:54:28 IST" finished-at="2024-05-29T18:54:29 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@7dc222ae]" name="tearDown" is-config="true" duration-ms="1321" started-at="2024-05-30T19:58:21 IST" finished-at="2024-05-30T19:58:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest -->
+      </class> <!-- WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest -->
     </test> <!-- WWproduct Application Test1 -->
   </suite> <!-- WWProduct_Automation -->
 </testng-results>
