@@ -105,6 +105,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	WorkflowAction.Taskprocessing();
 	Thread.sleep(3000);
 	String  caseIdTS= driver.findElement(By.xpath("//*[@id='btnAddAction']")).getText();
+	System.out.println("Caseid is" + caseIdTS);
 	Thread.sleep(2000);
 	WorkflowAction.clickstarticon();
 	Thread.sleep(2000);

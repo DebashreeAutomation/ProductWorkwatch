@@ -15,7 +15,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
 
 import org.testng.annotations.BeforeClass;
-
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import WWproduct.utilities.ReadConfig;
 
@@ -31,17 +31,12 @@ public class BaseClassTest {
 		@BeforeClass
 		public void setup(String Browser)
 		{	
-		    File path = new File(Downloadfile);
-		    File[] files = path.listFiles();
-		    for (File file : files) {
-		        System.out.println("Deleted filename :"+ file.getName());
-		        file.delete();
-		    }
 			readconfig=new ReadConfig();
 			HashMap<String,Object>chromeprefs=new HashMap<String, Object>();
 			chromeprefs.put("profile.default_content_settings.popups",0);
 			chromeprefs.put("download.default_directory",Downloadfile);
 			chromeOptions.setExperimentalOption("prefs",chromeprefs);
+		
 			String browserName=readconfig.getbrowser(); //!=null ? System.getProperty("browser"):System.getProperty("browser");
 			
 			if(browserName.contains("Chrome"))

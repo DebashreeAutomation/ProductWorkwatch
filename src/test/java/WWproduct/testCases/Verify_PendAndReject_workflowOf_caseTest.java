@@ -1,6 +1,7 @@
 package WWproduct.testCases;
 
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -13,7 +14,7 @@ import org.openqa.selenium.WebElement;
 
 
 import org.testng.Assert;
-
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import WWproduct.pageObjects.caseCreationThroughInterface;
@@ -28,7 +29,16 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	 public String baseURL;
 	 public String username;
 	 public String password;
-	 
+	 @BeforeSuite
+		public void deletefileFromFolder()
+		{
+			File path = new File(Downloadfile);
+		    File[] files = path.listFiles();
+		    for (File file : files) {
+		        System.out.println("Deleted filename :"+ file.getName());
+		        file.delete();
+		    }
+		}
 	@Test(priority=1)
 	 
 	public void login() throws InterruptedException, IOException
@@ -125,6 +135,8 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
        Thread.sleep(2000);
        
        //update case and see the case journey in task processing
+       String  caseIdTS= driver.findElement(By.xpath("//*[@id='btnAddAction']")).getText();
+   	System.out.println("Caseid is" + " " + caseIdTS);
 	WorkflowAction.Clickview_stsart();
 	Thread.sleep(2000);
 	WorkflowAction.ClickCaseUpdate();
@@ -137,8 +149,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	System.out.println("Advisor updated the case");
 	//Copied the caseid from task processing
 	Thread.sleep(2000);
-	String  caseIdTS= driver.findElement(By.xpath("//*[@class='lnk']")).getText();
-	Thread.sleep(2000);
+	
 	WorkflowAction.Clickview_stsart();
 	Thread.sleep(2000);
 	WorkflowAction.ClickCaseUpdate();
@@ -188,7 +199,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
     Thread.sleep(2000);
     //download detail  case journey of that case
     CM.downloadcasejourney2();
-    System.out.println("Advisor searched the rejected case in My raised case and downloaded the case journey excel");
+    System.out.println("Advisor searched the rejected case in My raised case and downloaded the case journey excel for case" + " " + caseIdTS);
     Thread.sleep(2000);
     //Check the case in Rejected bucket in case allocation page
     CM.CaseAllocation();
