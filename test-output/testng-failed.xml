@@ -7,18 +7,10 @@
   <test thread-count="5" name="WWproduct Application Test1(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="deletefileFromFolder"/>
-          <include name="setup"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- WWproduct.testCases.Verify_Processed_quality_authorization_WorkflowTest -->
       <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
         <methods>
-          <include name="tearDown"/>
           <include name="deletefileFromFolder"/>
+          <include name="tearDown"/>
           <include name="setup"/>
           <include name="login"/>
         </methods>
