@@ -34,7 +34,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 	 
 	public void verify_External_Query_Workflow() throws InterruptedException, IOException
 	{
-		readconfig=new ReadConfig();
+		/*readconfig=new ReadConfig();
 		username=readconfig.getMyCredentials();
 		password=readconfig.getPassword();
 		baseURL=readconfig.getApplicationURL();
@@ -77,7 +77,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 	
 		
 		
-		/*caseManagementPage CM = new caseManagementPage(driver);
+		caseManagementPage CM = new caseManagementPage(driver);
 		 caseCreationThroughInterface CaseCreation=new caseCreationThroughInterface(driver);
 		 wwWorkflow WorkflowAction= new wwWorkflow(driver);
 	Thread.sleep(3000);
@@ -150,10 +150,10 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
    	WorkflowAction.ConfirmOKforEQ();
    	Thread.sleep(2000);
 	WorkflowAction.ClickCUT();
-	Thread.sleep(2000);*/
+	Thread.sleep(2000);
 	driver.close();
 	
-	Thread.sleep(2000);
+	Thread.sleep(2000);*/
 	
 	//CIAS INT outlook login and response the query
 		WebDriver driver3=new ChromeDriver(chromeOptions);
@@ -185,10 +185,10 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			outlooklogin.signin();
 			Thread.sleep(5000);
 			System.out.println("Logged in to mailbox");
-			/*Thread.sleep(5000);
+			Thread.sleep(5000);
 			WebElement outlooksearchbox=driver3.findElement(By.xpath("//*[@class='rclHC']"));
 			System.out.println("Logged in to mailbox2");
-			Thread.sleep(2000);
+			/*Thread.sleep(2000);
 			outlooksearchbox.click();
 			System.out.println("Logged in to mailbox3");
 			Thread.sleep(2000);
