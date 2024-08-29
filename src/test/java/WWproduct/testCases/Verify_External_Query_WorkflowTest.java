@@ -169,14 +169,16 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			outlooklogin.signin();
 			Thread.sleep(5000);
 			System.out.println("Logged in to mailbox");
+			Thread.sleep(5000);
 			WebElement outlooksearchbox=driver3.findElement(By.xpath("//*[@id=\"topSearchInput\"]"));
 			Thread.sleep(2000);
 			outlooksearchbox.sendKeys( "[UAT] WW Product" + "\n");
 			Thread.sleep(2000);
-			query_workflow outlookAction=new query_workflow(driver3);
+			System.out.println("searched query");
+			/*query_workflow outlookAction=new query_workflow(driver3);
 			//outlookAction.outlooksearchiconclick();
 			Thread.sleep(2000);
-			/*outlookAction.wwdevclick();
+			outlookAction.wwdevclick();
 			Thread.sleep(4000);
 			outlookAction.replyallclick();
 			Thread.sleep(2000);
@@ -184,8 +186,8 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			Thread.sleep(1000);
 			outlookAction.mailbodytext();
 			Thread.sleep(1000);
-			outlookAction.sendbtnclick();
-			Thread.sleep(2000);*/
+			outlookAction.sendbtnclick();*/
+			Thread.sleep(2000);
 			driver3.close();
 			
 			/*Login to debashree advisor
