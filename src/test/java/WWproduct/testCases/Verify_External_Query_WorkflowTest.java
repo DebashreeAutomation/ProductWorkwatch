@@ -1,7 +1,10 @@
 package WWproduct.testCases;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -35,7 +38,6 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 		username=readconfig.getMyCredentials();
 		password=readconfig.getPassword();
 		baseURL=readconfig.getApplicationURL();
-		outlookURL=readconfig.getoutlookURL();
 		driver.get(baseURL);
 		
 		if(driver.getTitle().equals("Privacy error"))
@@ -68,10 +70,12 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			if(driver.getTitle().equals("Authentication Problem"))
 			{
 				login.clickOkforAlreadyexistSession();
+				System.out.println("Advisor Logged in successfully to WW product application");
 			}
-			
+			Thread.sleep(3000);
 		}
 	
+		
 		
 		/*caseManagementPage CM = new caseManagementPage(driver);
 		 caseCreationThroughInterface CaseCreation=new caseCreationThroughInterface(driver);
@@ -146,16 +150,28 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
    	WorkflowAction.ConfirmOKforEQ();
    	Thread.sleep(2000);
 	WorkflowAction.ClickCUT();
-	Thread.sleep(2000);
+	Thread.sleep(2000);*/
 	driver.close();
 	
-	Thread.sleep(2000);*/
+	Thread.sleep(2000);
 	
 	//CIAS INT outlook login and response the query
 		WebDriver driver3=new ChromeDriver(chromeOptions);
 		 driver3.manage().window().maximize(); 
 			Thread.sleep(1000);
-			driver3.get(outlookURL);
+			System.out.println("mailbox login test" + outlookURL);
+			
+			
+			
+			File src = new File("./Configuration/config.property");
+			FileInputStream fis = new FileInputStream(src);
+			Properties pro = new Properties();
+			pro.load(fis);
+			pro.getProperty("outlookURL");
+			System.out.println("mailbox login test1" + pro.getProperty("outlookURL"));
+			driver3.get(pro.getProperty("outlookURL"));
+			
+			
 			Thread.sleep(1000);
 			driver3.manage().deleteAllCookies(); Thread.sleep(2500);
 			Thread.sleep(2000);
@@ -169,8 +185,12 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			outlooklogin.signin();
 			Thread.sleep(5000);
 			System.out.println("Logged in to mailbox");
-			Thread.sleep(5000);
-			WebElement outlooksearchbox=driver3.findElement(By.xpath("//*[@id=\"topSearchInput\"]"));
+			/*Thread.sleep(5000);
+			WebElement outlooksearchbox=driver3.findElement(By.xpath("//*[@class='rclHC']"));
+			System.out.println("Logged in to mailbox2");
+			Thread.sleep(2000);
+			outlooksearchbox.click();
+			System.out.println("Logged in to mailbox3");
 			Thread.sleep(2000);
 			outlooksearchbox.sendKeys( "[UAT] WW Product" + "\n");
 			Thread.sleep(2000);
