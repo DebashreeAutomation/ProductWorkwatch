@@ -12,11 +12,11 @@
 		
 			
 		<classes>
-		<class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest" /> 
+		<class name="WWproduct.testCases.Verify_External_Query_WorkflowTest" /> 
 		
 		</classes>
         
 	</test>
    
 	
-</suite>
+</suite>                                                        

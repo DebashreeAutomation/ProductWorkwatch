@@ -217,7 +217,7 @@ public class wwWorkflow {
 
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
 		WebElement ExternalQueryTO=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='dvExternalQuery']/div/input")));
-		ExternalQueryTO.sendKeys("CIAS.INT@capita.co.uk");
+		ExternalQueryTO.sendKeys("p50038542@capita.co.uk");
 		
 		}
 	public void ConfirmOKforEQ() {

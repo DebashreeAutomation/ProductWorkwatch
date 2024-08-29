@@ -125,7 +125,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	CM.Outstandingbucket();
 	Thread.sleep(2000);
-	WebElement searchboxInCaseAllocationPage=driver.findElement(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input"));	
+	WebElement searchboxInCaseAllocationPage=driver.findElement(By.xpath("(//*[@class='form-control input-sm'])[2]"));	
     searchboxInCaseAllocationPage.sendKeys(caseIdTS + "\n");
     Thread.sleep(2500);
     CM.tickboxClick();
@@ -139,7 +139,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
     Thread.sleep(2000);
 	captureScreen(driver,"User cannot be assigned the case in quality team who has worked on the case previously");
 	Thread.sleep(2500);
-	WebElement searchboxInCaseAllocationpage=driver.findElement(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input"));	
+	WebElement searchboxInCaseAllocationpage=driver.findElement(By.xpath("(//*[@class='form-control input-sm'])[2]"));	
 	searchboxInCaseAllocationpage.sendKeys(caseIdTS + "\n");
 	Thread.sleep(2500);
 	CM.tickboxClick();
@@ -199,7 +199,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	  WebDriverWait wait6= new WebDriverWait(driver, Duration.ofSeconds(120));
 	  WebElement
 	  password=wait6.until(ExpectedConditions.elementToBeClickable(By.xpath(
-	  "//input[@name='passwd']"))); password.sendKeys("Capita#2024");
+	  "//input[@name='passwd']"))); password.sendKeys("Capita@2024");
 	  
 	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120));
 	  WebElement signin= wait.until(ExpectedConditions.elementToBeClickable(By.
@@ -224,7 +224,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	//String  caseIdTS1= driver.findElement(By.xpath("//*[@id=\"btnAddAction\"]")).getText();
 	Thread.sleep(2000);
 	WebDriverWait wait7=new WebDriverWait(driver, Duration.ofSeconds(1000));
-	WebElement searchboxInTaskprocessingPage=wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div[3]/div[1]/div/div[2]/div/section/div[16]/div/div/div/div[1]/div[1]/div[2]/div[2]/div/div/div[2]/div[1]/div[1]/div[2]/div/label/input")));	
+	WebElement searchboxInTaskprocessingPage=wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));	
 	searchboxInTaskprocessingPage.sendKeys(caseIdTS + "\n");
 	Thread.sleep(5000);
 	String  caseIdTS1= driver.findElement(By.xpath("//*[@id='btnAddAction']")).getText();
@@ -263,16 +263,18 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
        
       // The case is put for rework
        WebDriverWait wait8=new WebDriverWait(driver, Duration.ofSeconds(530));
-   	WebElement searchboxInTaskprocessingPageofTejasLocal=wait8.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='tblOutStandingQueue_filter']/label/input")));
+   	WebElement searchboxInTaskprocessingPageofTejasLocal=wait8.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
    	searchboxInTaskprocessingPageofTejasLocal.sendKeys(caseIdTS1 + "\n");
        Thread.sleep(2000);
        WorkflowAction1.Clickview_stsart();
 	Thread.sleep(2000);
 	WorkflowAction1.ClickStartAction();
-	//Thread.sleep(3000);
-	//WorkflowAction1.bankdetailsNobtn();
-	//Thread.sleep(3000);
-	//WorkflowAction1.accNumberbtn();
+	Thread.sleep(3000);
+	WorkflowAction1.bankdetailsNobtn();
+	Thread.sleep(3000);
+	WorkflowAction1.accNumberNobtn();
+	Thread.sleep(3000);
+	WorkflowAction1.currencyNobtn();
 	Thread.sleep(3000);
 	WorkflowAction1.bankdetailscomment();
 	Thread.sleep(3000);
@@ -297,7 +299,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	
 	Thread.sleep(2000);
 	WebDriverWait wait9=new WebDriverWait(driver, Duration.ofSeconds(1000));
-	WebElement searchboxInCaseAllocationPageofTejasLocal=wait9.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input")));
+	WebElement searchboxInCaseAllocationPageofTejasLocal=wait9.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 	searchboxInCaseAllocationPageofTejasLocal.sendKeys(caseIdTS1 + "\n");
     Thread.sleep(2500);
     CM1.tickboxClick();
@@ -338,7 +340,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	  WebDriverWait wait20= new WebDriverWait(driverDP, Duration.ofSeconds(120));
 	  WebElement
 	  passwordforDP=wait20.until(ExpectedConditions.elementToBeClickable(By.xpath(
-	  "//input[@name='passwd']"))); passwordforDP.sendKeys("Thank_you_sai542");
+	  "//input[@name='passwd']"))); passwordforDP.sendKeys("Thank_you_sai540");
 	  
 	  WebDriverWait wait21 = new WebDriverWait(driverDP, Duration.ofSeconds(120));
 	  WebElement signinforDP= wait21.until(ExpectedConditions.elementToBeClickable(By.
@@ -358,7 +360,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 		 wwWorkflow WorkflowActionDP= new wwWorkflow(driverDP);
 		 
 		 WebDriverWait wait24=new WebDriverWait(driverDP, Duration.ofSeconds(530));
-		   	WebElement searchboxInTaskprocessingPageofDebashree=wait24.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='tblOutStandingQueue_filter']/label/input")));
+		   	WebElement searchboxInTaskprocessingPageofDebashree=wait24.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 		   	searchboxInTaskprocessingPageofDebashree.sendKeys(caseIdTS1 + "\n");
 	
 	Thread.sleep(2000);
@@ -380,7 +382,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 	Thread.sleep(2000);
 	CMDP.Outstandingbucket();
 	WebDriverWait wait25=new WebDriverWait(driverDP, Duration.ofSeconds(1000));
-	WebElement searchboxInCaseAllocationPageofDebashreeAdvisor=wait25.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input")));
+	WebElement searchboxInCaseAllocationPageofDebashreeAdvisor=wait25.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 	searchboxInCaseAllocationPageofDebashreeAdvisor.sendKeys(caseIdTS1 + "\n");
 	
 	    Thread.sleep(2500);
@@ -415,7 +417,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 		  WebDriverWait wait12= new WebDriverWait(driver2, Duration.ofSeconds(120));
 		  WebElement
 		  password2=wait12.until(ExpectedConditions.elementToBeClickable(By.xpath(
-		  "//input[@name='passwd']"))); password2.sendKeys("Capita@2024");
+		  "//input[@name='passwd']"))); password2.sendKeys("Capita#2024");
 		  
 		  WebDriverWait wait13 = new WebDriverWait(driver2, Duration.ofSeconds(120));
 		  WebElement signin1= wait13.until(ExpectedConditions.elementToBeClickable(By.
@@ -435,7 +437,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			workflowForTestUser WorkflowAction2= new workflowForTestUser(driver2);
 		  
 		  WebDriverWait wait16=new WebDriverWait(driver2, Duration.ofSeconds(530));
-		   	WebElement searchboxInTaskprocessingPageforTESTUSER=wait16.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='tblOutStandingQueue_filter']/label/input")));
+		   	WebElement searchboxInTaskprocessingPageforTESTUSER=wait16.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 		   	searchboxInTaskprocessingPageforTESTUSER.sendKeys(caseIdTS1 + "\n");
 		 Thread.sleep(3000);
 		    WorkflowAction2.Clickview_stsart();
@@ -458,7 +460,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			CM2.Outstandingbucket();
 			Thread.sleep(2000);
 			WebDriverWait wait17=new WebDriverWait(driver2, Duration.ofSeconds(1000));
-			WebElement searchboxInCaseAllocationPageofTESTUSER=wait17.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input")));
+			WebElement searchboxInCaseAllocationPageofTESTUSER=wait17.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 			searchboxInCaseAllocationPageofTESTUSER.sendKeys(caseIdTS1 + "\n");
 		    Thread.sleep(2500);
 		    CM2.tickboxClick();
@@ -473,7 +475,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			WorkflowAction2.Taskprocessing();
 			Thread.sleep(3000);
 			WebDriverWait wait27=new WebDriverWait(driver2, Duration.ofSeconds(530));
-		   	WebElement searchboxInTaskprocessingforTESTUSER=wait27.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='tblOutStandingQueue_filter']/label/input")));
+		   	WebElement searchboxInTaskprocessingforTESTUSER=wait27.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 		   	searchboxInTaskprocessingforTESTUSER.sendKeys(caseIdTS1 + "\n");
 			Thread.sleep(3000);
 		    WorkflowAction2.Clickview_stsart();
@@ -503,7 +505,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 		       Thread.sleep(4000);
 		   	
 		       WebDriverWait wait28=new WebDriverWait(driver2, Duration.ofSeconds(530));
-			   	WebElement searchboxInTaskprocessingpageforTESTUSER1=wait28.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='tblOutStandingQueue_filter']/label/input")));
+			   	WebElement searchboxInTaskprocessingpageforTESTUSER1=wait28.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 		       searchboxInTaskprocessingpageforTESTUSER1.sendKeys(caseIdTS1 + "\n");
 		       Thread.sleep(3000);
 		       WorkflowAction2.Clickview_stsart();
@@ -523,7 +525,7 @@ public class Verify_Processed_quality_authorization_WorkflowTest extends BaseCla
 			Thread.sleep(2000);
 			CM2.Completedbucket();
 			WebDriverWait wait26=new WebDriverWait(driver2, Duration.ofSeconds(1000));
-			WebElement searchboxInCaseAllocationpageofTESTUSER1=wait26.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='FilteredCaseInfoGrid_filter']/label/input")));
+			WebElement searchboxInCaseAllocationpageofTESTUSER1=wait26.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@class='form-control input-sm'])[2]")));
 			searchboxInCaseAllocationpageofTESTUSER1.sendKeys(caseIdTS1 + "\n");
 			Thread.sleep(3000);
 			System.out.println("Case is closed and is moved to completed bucket in case allocation page");

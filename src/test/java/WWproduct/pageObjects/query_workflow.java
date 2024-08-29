@@ -209,7 +209,7 @@ public class query_workflow {
 	public void wwdevclick()
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
-		WebElement wwdevclick=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@class='XG5Jd JtO0E'])[1]")));	
+		WebElement wwdevclick=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@class='XG5Jd TszOG'])[4]")));	
 		wwdevclick.click();
 	}
 	public void threedotclick()
@@ -221,7 +221,7 @@ public class query_workflow {
 	public void replyallclick()
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5000));
-		WebElement Replyallclick=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/div[2]/div/div[2]/div[1]/div/div[2]/div[1]/div/div/div[1]/div/div/div/div/div/div/div/div/div[2]/div/div/div/div[2]/div/button/span")));	
+		WebElement Replyallclick=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/div[2]/div/div[2]/div[2]/div/div/div/div[3]/div/div[2]/div[3]/div/div/div/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div[1]/div[1]/div[2]/div/div/div[3]/div/div/button/span/i/span/i")));	
 		Replyallclick.click();
 	}
 	public void mailbodytext()

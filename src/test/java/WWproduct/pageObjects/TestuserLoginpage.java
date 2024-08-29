@@ -37,12 +37,12 @@ public class TestuserLoginpage {
 	 public void entertestuserpswd() {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(520));
 	WebElement password=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='passwd']")));
-	password.sendKeys("Capita@2024");
+	password.sendKeys("Capita#2024");
 	 }
 	 public void enterCIASINTpswd() {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(520));
 	WebElement debashreeCOUKpswd=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='passwd']")));
-	debashreeCOUKpswd.sendKeys("Cap_deb@2021%01_03");
+	debashreeCOUKpswd.sendKeys("Cap_deb@2021_01%03");
 	 }
 	 public void entertejasLocalpswd() {
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(520));

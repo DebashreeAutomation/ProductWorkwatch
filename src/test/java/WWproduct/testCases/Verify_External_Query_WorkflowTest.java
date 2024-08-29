@@ -73,7 +73,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 		}
 	
 		
-		//caseManagementPage CM = new caseManagementPage(driver);
+		/*caseManagementPage CM = new caseManagementPage(driver);
 		 caseCreationThroughInterface CaseCreation=new caseCreationThroughInterface(driver);
 		 wwWorkflow WorkflowAction= new wwWorkflow(driver);
 	Thread.sleep(3000);
@@ -98,7 +98,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 	Thread.sleep(2000);
 	WorkflowAction.Taskprocessing();
 	Thread.sleep(2000);
-	String  caseid= driver.findElement(By.xpath("(//*[@id='btnAddAction'])[1]")).getText();
+	String  caseid= driver.findElement(By.xpath("//*[@id='btnAddAction']")).getText();
 	WorkflowAction.clickstarticon();
 	Thread.sleep(2000);
 	WorkflowAction.ClickStartAction();
@@ -149,7 +149,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 	Thread.sleep(2000);
 	driver.close();
 	
-	Thread.sleep(2000);
+	Thread.sleep(2000);*/
 	
 	//CIAS INT outlook login and response the query
 		WebDriver driver3=new ChromeDriver(chromeOptions);
@@ -167,16 +167,17 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			outlooklogin.enterCIASINTpswd();
 			Thread.sleep(2000);
 			outlooklogin.signin();
-			//Thread.sleep(5000);
-			//WebElement outlooksearchbox=driver3.findElement(By.xpath("//*[@id=\"topSearchInput\"]"));
-			//Thread.sleep(2000);
-			//outlooksearchbox.sendKeys( "QRY27795" + "\n");
-			//Thread.sleep(2000);
+			Thread.sleep(5000);
+			System.out.println("Logged in to mailbox");
+			WebElement outlooksearchbox=driver3.findElement(By.xpath("//*[@id=\"topSearchInput\"]"));
+			Thread.sleep(2000);
+			outlooksearchbox.sendKeys( "[UAT] WW Product" + "\n");
+			Thread.sleep(2000);
 			query_workflow outlookAction=new query_workflow(driver3);
 			//outlookAction.outlooksearchiconclick();
 			Thread.sleep(2000);
-			outlookAction.wwdevclick();
-			Thread.sleep(2000);
+			/*outlookAction.wwdevclick();
+			Thread.sleep(4000);
 			outlookAction.replyallclick();
 			Thread.sleep(2000);
 			////outlookAction.threedotclick();
@@ -184,10 +185,10 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 			outlookAction.mailbodytext();
 			Thread.sleep(1000);
 			outlookAction.sendbtnclick();
-			Thread.sleep(2000);
+			Thread.sleep(2000);*/
 			driver3.close();
 			
-			//Login to debashree advisor
+			/*Login to debashree advisor
 			WebDriver driverDP=new ChromeDriver(chromeOptions);
 			driverDP.manage().window().maximize(); 
 			driverDP.get(baseURL);
@@ -249,7 +250,7 @@ public class Verify_External_Query_WorkflowTest extends BaseClassTest {
 		   	Thread.sleep(2000);
 		   	WorkflowActionDP.ClickSubmit();
 		    Thread.sleep(2000);
-		    driverDP.close();
+		    driverDP.close();*/
 		    
 			 
 }

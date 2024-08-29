@@ -154,7 +154,7 @@ public class Verify_query_forward_externalquery_close_workflowTest extends BaseC
 	    	js.executeScript("arguments[0].scrollIntoView();", element);
 	    	Thread.sleep(2000);
 	    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(520));
-	    	WebElement Querysearchbox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='tblMyQueries_filter']/label/input")));
+	    	WebElement Querysearchbox=wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//*[@class='form-control input-sm'])[4]")));
 	    	Thread.sleep(2000);
 	    	Querysearchbox.sendKeys(queryid + "\n");
 	    	Thread.sleep(2000);

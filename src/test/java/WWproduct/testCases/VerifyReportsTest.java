@@ -70,6 +70,7 @@ public class VerifyReportsTest extends BaseClassTest {
 		RP.clickgoinPR();
 		Thread.sleep(3000);
 		RP.exportProductivityReport();
+		System.out.println("productivity report downloaded");
 		Thread.sleep(3000);
 		WebElement ToDate=driver.findElement(By.xpath("//*[@class='dateProdcRptTo form-control line-height']"));
 	    WebElement FromDate=driver.findElement(By.xpath("//*[@class='dateProdcRptFrom form-control line-height']"));
