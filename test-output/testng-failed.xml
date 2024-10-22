@@ -7,13 +7,14 @@
   <test thread-count="5" name="WWproduct Application Test1(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="WWproduct.testCases.Verify_External_Query_WorkflowTest">
+      <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
         <methods>
+          <include name="deletefileFromFolder"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verify_External_Query_Workflow"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- WWproduct.testCases.Verify_External_Query_WorkflowTest -->
+      </class> <!-- WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest -->
     </classes>
   </test> <!-- WWproduct Application Test1(failed) -->
 </suite> <!-- Failed suite [WWProduct_Automation] -->

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="WWProduct_Automation" duration-ms="122517" started-at="2024-09-17T19:05:27 IST" finished-at="2024-09-17T19:07:30 IST">
+  <suite name="WWProduct_Automation" duration-ms="122734" started-at="2024-10-22T09:05:30 IST" finished-at="2024-10-22T09:07:33 IST">
     <groups>
     </groups>
-    <test name="WWproduct Application Test1" duration-ms="122517" started-at="2024-09-17T19:05:27 IST" finished-at="2024-09-17T19:07:30 IST">
+    <test name="WWproduct Application Test1" duration-ms="122734" started-at="2024-10-22T09:05:30 IST" finished-at="2024-10-22T09:07:33 IST">
       <class name="WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest">
-        <test-method status="PASS" signature="deletefileFromFolder()[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="deletefileFromFolder" is-config="true" duration-ms="769" started-at="2024-09-17T19:05:27 IST" finished-at="2024-09-17T19:05:27 IST">
+        <test-method status="PASS" signature="deletefileFromFolder()[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="deletefileFromFolder" is-config="true" duration-ms="8" started-at="2024-10-22T09:05:30 IST" finished-at="2024-10-22T09:05:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletefileFromFolder -->
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="setup" is-config="true" duration-ms="5458" started-at="2024-09-17T19:05:28 IST" finished-at="2024-09-17T19:05:33 IST">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="setup" is-config="true" duration-ms="4435" started-at="2024-10-22T09:05:30 IST" finished-at="2024-10-22T09:05:35 IST">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:1, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="login" duration-ms="116045" started-at="2024-09-17T19:05:33 IST" finished-at="2024-09-17T19:07:29 IST">
+        <test-method status="PASS" signature="login()[pri:1, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="login" duration-ms="117318" started-at="2024-10-22T09:05:35 IST" finished-at="2024-10-22T09:07:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="tearDown" is-config="true" duration-ms="657" started-at="2024-09-17T19:07:29 IST" finished-at="2024-09-17T19:07:30 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WWproduct.testCases.Verify_PendAndReject_workflowOf_caseTest@543e710e]" name="tearDown" is-config="true" duration-ms="804" started-at="2024-10-22T09:07:32 IST" finished-at="2024-10-22T09:07:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
