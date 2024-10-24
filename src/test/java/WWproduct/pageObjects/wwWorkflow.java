@@ -34,35 +34,35 @@ public class wwWorkflow {
 	public void ClickStartAction() {
 		
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement startAction=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"btnFilter\"]")));
+		WebElement startAction=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='btnFilter']")));
 		startAction.click();
         
 	}
     public void ClickCaseUpdate() {
 		
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement updatecase=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"TabsActionHolder\"]/li[2]/a/span")));
+		WebElement updatecase=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='TabsActionHolder']/li[2]/a/span")));
 		updatecase.click();
         
 	}
    public void Clickupdate() {
 		
-		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement update=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"btnUpdateCase\"]")));
+		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(1000));
+		WebElement update=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='btn btn-success btn-md dropdown-toggle float-xs-right']")));
 		update.click();
         
 	}
    public void entercaseupdateText() {
 		
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(530));
-		WebElement entertexttoupdateCase=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"dvCaseTaggingPopup\"]/div[2]/div/input")));
+		WebElement entertexttoupdateCase=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='dvCaseTaggingPopup']/div[2]/div/input")));
 		entertexttoupdateCase.sendKeys("Case is Updated for Testing purpose");
        
 	}
    public void updateurgency() {
 
 		WebDriverWait wait=new WebDriverWait(ldriver, Duration.ofSeconds(300));
-		WebElement Urgencydropdown= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"UrgencyId\"]")));
+		WebElement Urgencydropdown= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='UrgencyId']")));
 		Select urgencyHigh=new Select(Urgencydropdown);
 		urgencyHigh.selectByVisibleText("High");
 	}

@@ -137,17 +137,17 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
        //update case and see the case journey in task processing
        String  caseIdTS= driver.findElement(By.xpath("//*[@id='btnAddAction']")).getText();
    	System.out.println("Caseid is" + " " + caseIdTS);
-	WorkflowAction.Clickview_stsart();
+	/*WorkflowAction.Clickview_stsart();
 	Thread.sleep(2000);
 	WorkflowAction.ClickCaseUpdate();
 	Thread.sleep(2000);
 	WorkflowAction.entercaseupdateText();
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	WorkflowAction.updateurgency();
-	Thread.sleep(2000);
+	Thread.sleep(5000);
 	WorkflowAction.Clickupdate();
-	System.out.println("Advisor updated the case");
-	//Copied the caseid from task processing
+	System.out.println("Advisor updated the case");S
+	//Copied the caseid from task processing*/
 	Thread.sleep(2000);
 	
 	WorkflowAction.Clickview_stsart();
