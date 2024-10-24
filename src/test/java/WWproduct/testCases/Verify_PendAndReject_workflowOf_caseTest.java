@@ -146,7 +146,7 @@ public class Verify_PendAndReject_workflowOf_caseTest extends BaseClassTest  {
 	WorkflowAction.updateurgency();
 	Thread.sleep(5000);
 	WorkflowAction.Clickupdate();
-	System.out.println("Advisor updated the case");S
+	System.out.println("Advisor updated the case");
 	//Copied the caseid from task processing*/
 	Thread.sleep(2000);
 	
